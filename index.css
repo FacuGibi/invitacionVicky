@@ -5,7 +5,7 @@ html {
 }
 body {
   overflow: hidden;
-  background-image: url(/imagenes/fondo.png);
+  background-image: "../imagenes/fondo.png";
   background-size: 70% 100%;
   background-repeat: no-repeat;
 }
@@ -13,7 +13,7 @@ body {
 @media (width >= 769px) {
   body {
     width: 900px;
-    background-image: url(/imagenes/fondo.png);
+    background-image: "../imagenes/fondo.png";
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -43,7 +43,7 @@ header {
 
 .row {
   width: 55%;
-  background-image: url(/imagenes/reloj.png);
+  background-image: "../imagenes/reloj.png";
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;

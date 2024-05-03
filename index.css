@@ -5,19 +5,11 @@ html {
 }
 body {
   overflow: hidden;
-  background-image: url('./imagenes/fondo.png');
-  background-size: 70% 100%;
+  background-image: url("./imagenes/fondo.png");
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
-@media (width >= 769px) {
-  body {
-    width: 900px;
-    background-image: url('./imagenes/fondo.png');
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-}
 .container {
   display: grid;
   place-items: center;
@@ -43,7 +35,7 @@ header {
 
 .row {
   width: 55%;
-  background-image:url('./imagenes/reloj.png');
+  background-image: url("./imagenes/reloj.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -148,6 +140,7 @@ header {
   text-align: center;
   font-family: "gothambook", sans-serif;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .gBold {
@@ -188,13 +181,99 @@ footer {
   padding-bottom: 30%;
 }
 
-.vinculo{
+.vinculo {
   list-style: none;
   text-decoration: none;
 }
 
+@media (min-width: 768px) {
+  html {
+    overflow-x: hidden;
+    margin: auto;
+    width: max-content;
+  }
+  body {
+    background-size: 80% 100%;
+    background-image: url("./imagenes/fondo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .container {
+    display: grid;
+    place-items: center;
+  }
 
+  .container-fluid {
+    display: grid;
+    place-items: center;
+  }
 
+  .container2 {
+    display: grid;
+    place-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    overflow-x: hidden;
+    width: 126%;
+    margin-left: -12.5%;
+    margin-top: -5%;
+  }
+  body {
+    background-size: 105% 100%;
+    background-image: url("./imagenes/fondo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  header {
+    margin-bottom: 20px;
+    width: 140%;
+  }
+
+  #logo {
+    margin-top: 130px;
+    width: 35%;
+  }
+
+  .row {
+    width: 63%;
+    background-image: url("./imagenes/reloj.png");
+    background-size: 90% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-right: 30px;
+    padding-left: 27px;
+    padding-top: 10px;
+  }
+
+  .col {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    line-height: 12px;
+    font-family: "gothammedium", sans-serif;
+    letter-spacing: 4px;
+    font-size: 17px;
+  }
+
+  #imgFinal{
+    width: 150%;
+    height: 1px;
+  }
+
+  #teEspero {
+    font-family: "rosellinda_alyamoreregular", sans-serif;
+    font-size: 50pt;
+    margin-top: 15px;
+  }
+
+  footer {
+    padding-bottom: 40%;
+  }
+}
 
 @font-face {
   font-family: "gothamblack";

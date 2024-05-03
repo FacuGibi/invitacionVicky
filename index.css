@@ -5,7 +5,7 @@ html {
 }
 body {
   overflow: hidden;
-  background-image: "../imagenes/fondo.png";
+  background-image: url(../imagenes/fondo.png);
   background-size: 70% 100%;
   background-repeat: no-repeat;
 }
@@ -13,7 +13,7 @@ body {
 @media (width >= 769px) {
   body {
     width: 900px;
-    background-image: "../imagenes/fondo.png";
+    background-image: url(../imagenes/fondo.png);
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -43,7 +43,7 @@ header {
 
 .row {
   width: 55%;
-  background-image: "../imagenes/reloj.png";
+  background-image: url(../imagenes/reloj.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -179,7 +179,7 @@ header {
   font-size: 13px;
 }
 .btn-grad:hover {
-  background-position: right center; /* change the direction of the change here */
+  background-position: right center;
   color: #fff;
   text-decoration: none;
 }

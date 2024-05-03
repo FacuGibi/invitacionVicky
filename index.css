@@ -43,7 +43,7 @@ header {
 
 .row {
   width: 55%;
-  background-image: url(imagenes/recurso.jpg);
+  background-image:url(./imagenes/reloj.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
